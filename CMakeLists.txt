@@ -3,7 +3,7 @@ set(CMAKE_SUPPRESS_REGENERATION true)
 project("LAStools")
 
 if (!MSVC)
-	add_compile_options(-O3 -Wall -Wno-strict-aliasing)
+	add_compile_options(-O3 -Wall -Wno-strict-aliasing -std=c++11)
 else()
 	add_definitions(-D_CRT_SECURE_NO_WARNINGS)
 endif()
